@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACM MEDIA - Phân Phối Âm Nhạc Toàn Cầu</title>
+    <!-- Font chữ -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- File CSS -->
+    <link rel="stylesheet" href="style.css?v=7.0">
+</head>
+<body>
+
+    <!-- Hiệu ứng ánh sáng nền -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">ACM <span class="gradient-text">Media</span></a>
+            
+            <!-- Menu Desktop -->
+            <nav class="nav-links">
+                <a href="#music">Dự án âm nhạc</a>
+                <a href="#stats">Thống Kê</a>
+                <a href="#donate" class="donate-link">Donate PayPal</a>
+            </nav>
+
+            <!-- Nút mở Menu Mobile (Hamburger) -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+            </button>
+        </div>
+
+        <!-- Menu Mobile Drawer -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close-menu" id="closeMenu">&times;</button>
+            <a href="#music" class="mobile-link">Dự án âm nhạc</a>
+            <a href="#stats" class="mobile-link">Thống Kê</a>
+            <a href="https://paypal.me/taikhoancuaban" target="_blank" class="mobile-link donate-btn-mobile">❤️ Donate qua PayPal</a>
+        </div>
+    </header>
+
+    <!-- Khu vực Quảng Cáo Số 1 (Header Banner Ad) -->
+    <div class="container ad-wrapper" style="padding-bottom: 0;">
+        <div class="ad-banner-box">
+            <span class="ad-label">Sponsored / Quảng Cáo</span>
+            <!-- Mã quảng cáo của bạn -->
+            <script async="async" data-cfasync="false" src="https://beansnicerroller.com/f6882e86a734e33158fd682adfebab32/invoke.js"></script>
+            <div id="container-f6882e86a734e33158fd682adfebab32"></div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero reveal">
+        <div class="hero-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 4px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Certified Global Digital Distributor
+        </div>
+        <h1>Phân Phối Âm Nhạc Toàn Cầu Cùng <span class="gradient-text">The Orchard</span></h1>
+        <p>Đưa âm nhạc của bạn lên hơn 450+ nền tảng số lớn nhất thế giới: Spotify, Apple Music, TikTok, YouTube Music với hệ thống bản quyền và chống gian lận tiêu chuẩn quốc tế.</p>
+        
+        <div class="hero-actions">
+            <a href="#" class="cta-btn" id="openModalBtn">Gửi Demo Ngay</a>
+            <a href="#music" class="outline-btn">Khám Phá sản phẩm</a>
+        </div>
+    </section>
+
+    <!-- Partners Marquee -->
+    <div class="partners-bar reveal">
+        <div class="partners-marquee">
+            <div class="partners-track">
+                <div class="partner-pill">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#1DB954"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.599-.12-.42.18-.78.6-.9 4.56-1.021 8.52-.6 11.64 1.32.36.18.48.66.24 1.08zm1.44-3.84c-.301.42-.84.6-1.26.3-3.24-1.98-8.16-2.58-11.94-1.41-.48.18-1.02-.06-1.2-.54-.18-.48.06-1.02.54-1.2 4.2-1.26 9.6-.6 13.5 1.8 ạp.42.3.54.84.36 1.25zm.12-3.96C15.12 7.38 8.82 7.14 5.1 8.28c-.6.18-1.2-.18-1.38-.78-.18-.6.18-1.2.78-1.38 4.38-1.32 11.4-1.02 15.66 1.5.54.3.72 1.02.42 1.56-.3.54-1.02.72-1.56.42z"/></svg> Spotify Partner
+                </div>
+                <div class="partner-pill">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f3f4f6"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.78c.67-.82 1.12-1.96.99-3.1-.98.04-2.16.65-2.85 1.47-.62.72-1.16 1.88-1 2.98 1.09.08 2.2-.53 2.86-1.35z"/></svg> Apple Music
+                </div>
+                <div class="partner-pill">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg> YouTube Content ID
+                </div>
+                <div class="partner-pill">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#ff0050"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg> TikTok Direct Music
+                </div>
+            </div>
+            <div class="partners-track" aria-hidden="true">
+                <div class="partner-pill">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#1DB954"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.599-.12-.42.18-.78.6-.9 4.56-1.021 8.52-.6 11.64 1.32.36.18.48.66.24 1.08zm1.44-3.84c-.301.42-.84.6-1.26.3-3.24-1.98-8.16-2.58-11.94-1.41-.48.18-1.02-.06-1.2-.54-.18-.48.06-1.02.54-1.2 4.2-1.26 9.6-.6 13.5 1.8 ạp.42.3.54.84.36 1.25zm.12-3.96C15.12 7.38 8.82 7.14 5.1 8.28c-.6.18-1.2-.18-1.38-.78-.18-.6.18-1.2.78-1.38 4.38-1.32 11.4-1.02 15.66 1.5.54.3.72 1.02.42 1.56-.3.54-1.02.72-1.56.42z"/></svg> Spotify Partner
+                </div>
+                <div class="partner-pill">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#f3f4f6"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.78c.67-.82 1.12-1.96.99-3.1-.98.04-2.16.65-2.85 1.47-.62.72-1.16 1.88-1 2.98 1.09.08 2.2-.53 2.86-1.35z"/></svg> Apple Music
+                </div>
+                <div class="partner-pill">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg> YouTube Content ID
+                </div>
+                <div class="partner-pill">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#ff0050"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg> TikTok Direct Music
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <section class="container stats-section reveal" id="stats">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>450+</h3>
+                <p>Nền Tảng Số</p>
+            </div>
+            <div class="stat-card">
+                <h3>100%</h3>
+                <p>Bản Quyền Độc Quyền</p>
+            </div>
+            <div class="stat-card">
+                <h3>24/7</h3>
+                <p>Hỗ Trợ & Kiểm Duyệt</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section (7 ID Spotify chuẩn) -->
+    <section class="container reveal" id="music">
+        <div class="section-header">
+            <span class="section-tag">THE ORCHARD ENTERPRISES Phát Hành</span>
+            <h2>Dự Án Âm Nhạc Trực Tuyến</h2>
+        </div>
+        
+        <div class="spotify-grid">
+            <div class="spotify-card">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4raDj3cIyeganC8nh1X5sT?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            <div class="spotify-card">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/18ketsHcjUsnhonK23WIIe?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            <div class="spotify-card">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2cODZkUkzij48qA0xvYVPn?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            <div class="spotify-card">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1DTQbvg9qlfNy8D0nRrQyT?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            <div class="spotify-card">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3uwgEkPNAUDSFe1DPDZXKd?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            <div class="spotify-card">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5J723IA5Ghh8MJVSdI09dq?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            <div class="spotify-card">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0Hw1zo5gbERRMOsX8E79vq?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Khu Vực Quảng Cáo Số 2 (In-Page Banner Ad) -->
+    <div class="container ad-wrapper" style="padding-top: 0;">
+        <div class="ad-banner-box">
+            <span class="ad-label">Sponsored / Quảng Cáo</span>
+            <!-- Mã quảng cáo của bạn -->
+            <script async="async" data-cfasync="false" src="https://beansnicerroller.com/f6882e86a734e33158fd682adfebab32/invoke.js"></script>
+            <div id="container-f6882e86a734e33158fd682adfebab32"></div>
+        </div>
+    </div>
+
+    <!-- Footer (Canh Giữa Hoàn Toàn) -->
+    <footer class="reveal">
+        <div class="container">
+            <div class="footer-center-content">
+                <!-- Logo & Brand -->
+                <div class="footer-brand-col">
+                    <a href="#" class="logo">ACM <span class="gradient-text">Media</span></a>
+                    <p>Official Distribution Partner of The Orchard Enterprises (A Sony Music Company). Phân phối và bảo hộ âm nhạc toàn cầu chuyên nghiệp.</p>
+                </div>
+
+                <!-- Liên kết nhanh -->
+                <div class="footer-links-col" id="services">
+                    <h4>Liên Kết Nhanh</h4>
+                    <ul>
+                        <li><a href="#music">Sản phẩm được THE ORCHARD ENTERPRISES phát hành</a></li>
+                        <li><a href="#stats">Thống Kê Hệ Thống</a></li>
+                        <li><a href="#donate">Donate PayPal</a></li>
+                    </ul>
+                </div>
+
+                <!-- Bảo hộ & Ủng hộ -->
+                <div class="footer-donate-col" id="donate">
+                    <h4>Bảo Hộ & Ủng Hộ</h4>
+                    <div class="dmca-badge-link">
+                        <img src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-01.png?ID=demo" alt="DMCA.com Protected">
+                    </div>
+                    <p class="dmca-desc">Nội dung phân phối độc quyền được bảo hộ bởi DMCA.</p>
+                    
+                    <!-- Khung Donate PayPal -->
+                    <div class="paypal-box">
+                        <p>Ủng hộ tác giả duy trì dự án:</p>
+                        <a href="https://paypal.me/taikhoancuaban" target="_blank" class="paypal-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.067 8.5c-.321-1.92-1.742-2.5-3.958-2.5h-4.322c-.521 0-.967.379-1.05 1.002l-1.895 12.025c-.046.331.211.62.544.62h3.181c.521 0 .967-.379 1.05-1.002l.474-3.007c.083-.623.529-1.002 1.05-1.002h1.479c3.042 0 5.417-1.238 5.956-4.622zm-3.218 3.51c-.347 2.196-2.184 2.196-3.937 2.196h-.915l.624-3.962c.042-.266.27-.464.538-.464h.478c1.378 0 2.593 0 2.812 1.488zm3.642-6.536c-.313-1.871-1.699-2.435-3.858-2.435h-4.214c-.521 0-.967.379-1.05 1.002l-1.903 12.083c-.043.275.174.511.452.511h2.955c.521 0 .967-.379 1.05-1.002l.45-2.855c.083-.623.529-1.002 1.05-1.002h1.442c2.967 0 5.283-1.208 5.808-4.511.272-1.724-.044-2.894-1.288-3.791z"/></svg> Donate qua PayPal
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-flex">
+                    <span>© 2026 ACM Media. All rights reserved.</span>
+                    <span>Powered by The Orchard Distribution.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Nút Back to Top -->
+    <button id="backToTopBtn" aria-label="Quay về đầu trang"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></button>
+
+    <!-- Modal Gửi Demo -->
+    <div class="modal-overlay" id="demoModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Gửi Demo Âm Nhạc</h3>
+                <button class="close-btn" id="closeModalBtn">&times;</button>
+            </div>
+            <form onsubmit="handleDemoSubmit(event)">
+                <div class="form-group">
+                    <label>Tên nghệ sĩ / Dự án</label>
+                    <input type="text" id="artistName" required placeholder="Nhập tên của bạn...">
+                </div>
+                <div class="form-group">
+                    <label>Link bản demo (Google Drive / Soundcloud)</label>
+                    <input type="url" id="demoUrl" required placeholder="https://...">
+                </div>
+                <div class="form-group">
+                    <label>Số điện thoại / Zalo liên hệ</label>
+                    <input type="text" id="contactInfo" required placeholder="0912345xxx">
+                </div>
+                <button type="submit" class="submit-btn">Gửi Duyệt Demo</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript Xử Lý -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                e.preventDefault();
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        const menuToggle = document.getElementById('menuToggle');
+        const closeMenu = document.getElementById('closeMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if(menuToggle && mobileMenu) {
+            menuToggle.addEventListener('click', () => mobileMenu.classList.add('active'));
+            closeMenu.addEventListener('click', () => mobileMenu.classList.remove('active'));
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => mobileMenu.classList.remove('active'));
+            });
+        }
+
+        const openModalBtn = document.getElementById('openModalBtn');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const demoModal = document.getElementById('demoModal');
+
+        if(openModalBtn && demoModal) {
+            openModalBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                demoModal.classList.add('show');
+            });
+            closeModalBtn.addEventListener('click', () => {
+                demoModal.classList.remove('show');
+            });
+            window.addEventListener('click', (e) => {
+                if(e.target === demoModal) demoModal.classList.remove('show');
+            });
+        }
+
+        function handleDemoSubmit(e) {
+            e.preventDefault();
+            alert("Gửi demo thành công! Hệ thống The Orchard & ACM Media sẽ xem xét và liên hệ lại với bạn sớm nhất.");
+            demoModal.classList.remove('show');
+            e.target.reset();
+        }
+
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealOnScroll = () => {
+            const windowHeight = window.innerHeight;
+            revealElements.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 80;
+                if (elementTop < windowHeight - elementVisible) {
+                    el.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+
+        const backToTopBtn = document.getElementById('backToTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
