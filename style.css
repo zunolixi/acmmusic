@@ -402,64 +402,81 @@ header {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* Khung Quảng Cáo Style - Ép Cứng Chiều Cao Gọn Gàng (95px) */
+/* KHUNG QUẢNG CÁO ĐÃ ĐƯỢC SỬA: Gọn gàng, ôm khít, căn giữa tuyệt đối, không đè viền */
 .ad-wrapper {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
     box-sizing: border-box;
-    margin: 10px auto;
+    margin: 14px 0;
 }
 
 .ad-banner-box {
     background: rgba(18, 24, 38, 0.7);
-    border: 1px dashed rgba(168, 85, 247, 0.3);
+    border: 1px dashed rgba(168, 85, 247, 0.4);
     border-radius: 12px;
-    padding: 8px 12px;
-    text-align: center;
-    position: relative;
+    padding: 10px 12px 12px 12px;
     width: 100%;
-    height: 95px !important;
-    max-height: 95px !important;
-    overflow: hidden !important;
+    max-width: 460px;
     box-sizing: border-box;
-}
-
-.ad-banner-box iframe, 
-.ad-banner-box div[id^="container-"],
-.ad-banner-box script {
-    max-height: 80px !important;
-    width: 100% !important;
-    overflow: hidden !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .ad-label {
-    position: absolute;
-    top: -8px;
-    left: 16px;
-    background: var(--card-bg);
-    color: var(--text-muted);
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 0 6px;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-    z-index: 20;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+    text-align: center;
+    display: block;
+    font-weight: 600;
+}
+
+.ad-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.ad-content iframe, 
+.ad-content div[id^="container-"], 
+.ad-content ins {
+    max-width: 100% !important;
+    width: auto !important;
+    margin: 0 auto !important;
+    display: block !important;
+}
+
+/* Ẩn script thô nếu trình duyệt hiển thị nhầm */
+.ad-banner-box script {
+    display: none !important;
 }
 
 .ad-slot-placeholder {
-    padding: 16px;
+    padding: 4px;
     color: var(--text-muted);
+    text-align: center;
+    width: 100%;
 }
 
 .ad-slot-placeholder p {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: var(--text-main);
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 .ad-slot-placeholder small {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     opacity: 0.8;
 }
 
@@ -483,10 +500,10 @@ header {
     }
 }
 
-/* Footer (Canh Giữa Hoàn Toàn) */
+/* Footer (Canh Giữa Hoàn Toàn & Đồng Bộ) */
 footer {
     border-top: 1px solid var(--border-color);
-    padding: 40px 0 20px;
+    padding: 40px 16px 20px;
     background: var(--card-bg);
     margin-top: 40px;
     width: 100%;
@@ -499,34 +516,52 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 36px;
+    gap: 32px;
     max-width: 600px;
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
 }
 
-.footer-brand-col p, .footer-donate-col .dmca-desc {
+.footer-center-content > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-brand-col p, 
+.footer-donate-col .dmca-desc {
     max-width: 480px;
-    margin: 12px auto 0;
+    margin: 8px auto 0;
     color: var(--text-muted);
     font-size: 0.85rem;
     word-break: break-word;
+    text-align: center;
 }
 
-.footer-links-col h4, .footer-donate-col h4 {
+.footer-links-col h4, 
+.footer-donate-col h4 {
     font-size: 0.95rem;
     font-weight: 600;
     margin-bottom: 12px;
+    text-align: center;
 }
 
 .footer-links-col ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .footer-links-col ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .footer-links-col ul li a {
@@ -540,6 +575,12 @@ footer {
     color: var(--text-main);
 }
 
+.dmca-badge-link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .dmca-badge-link img {
     max-width: 110px;
     margin: 0 auto 8px;
@@ -547,7 +588,7 @@ footer {
     height: auto;
 }
 
-/* Khung Donate PayPal chuẩn */
+/* Khung Donate PayPal chuẩn căn giữa */
 .paypal-box {
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--border-color);
@@ -557,12 +598,14 @@ footer {
     max-width: 350px;
     margin: 0 auto;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .paypal-box p {
     font-size: 0.8rem;
     color: var(--text-muted);
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .paypal-btn {
@@ -589,7 +632,7 @@ footer {
 
 .footer-bottom {
     max-width: 1000px;
-    margin: 40px auto 0;
+    margin: 30px auto 0;
     padding: 16px 16px 0;
     border-top: 1px solid var(--border-color);
     color: var(--text-muted);
@@ -602,8 +645,10 @@ footer {
 .footer-bottom-flex {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
 }
 
 /* Nút Back to Top */
